@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saba - Term_Project</title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="Term_Project.styles.css" />
+    <style>
+        input{
+            margin-top:2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section>
+            <header>
+                <h2>Atlantic Trails Resort</h2>
+            </header>
+            <div>
+                <nav>
+                    <ul style="list-style-type:none;display:inline-block">
+                        <li style="display:inline-block;margin-left:10px">
+                            <a href="Index.html">Home</a>
+                        </li>
+                        <li style="display:inline-block;margin-left:10px">
+                            <a href="Yurts.html">Yurts</a>
+                        </li>
+                        <li style="display:inline-block;margin-left:10px">
+                            <a href="Activities.html">Activities</a>
+                        </li>
+                        <li style="display:inline-block;margin-left:10px">
+                            <a href="Reservation.html">Reservation</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <h3>Reservation at Atlantic Trails</h3>
+                <h4>Contact Us Today!</h4>
+            </div>
+            <div>
+                <form action="ProcessForm.php" method="post">
+                    <header>
+                        <h3>Reservation Form</h3>
+                    </header>
+                    <content>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span>First Name:</span>
+                            </div>
+                            <div class="col-md-9">
+                                <input type="text" name="FirstName" id="FirstName" required />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span>Last Name:</span>
+                            </div>
+                            <div class="col-md-9">
+                                <input type="text" name="LastName" id="LastName" required />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <span><b>Address 1</b></span>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span>Number & Street:</span>
+                            </div>
+                            <div class="col-md-9">
+                                <input type="text" name="NumStreet" id="NumStreet" required />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span>City:</span>
+                            </div>
+                            <div class="col-md-9">
+                                <input type="text" name="City" id="City" required />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span>State:</span>
+                            </div>
+                            <div class="col-md-9">
+                                <input type="text" name="State" id="State" required />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span>Zip Code:</span>
+                            </div>
+                            <div class="col-md-9">
+                                <input type="text" name="Zip" id="Zip" required />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <span><b>Address 2</b></span>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span>Number & Street:</span>
+                            </div>
+                            <div class="col-md-9">
+                                <input type="text" name="NumStreet2" id="NumStreet2" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span>City:</span>
+                            </div>
+                            <div class="col-md-9">
+                                <input type="text" name="City2" id="City2" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span>State:</span>
+                            </div>
+                            <div class="col-md-9">
+                                <input type="text" name="State2" id="State2" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span>Zip Code:</span>
+                            </div>
+                            <div class="col-md-9">
+                                <input type="text" name="Zip2" id="Zip2" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span>Check-in Date:</span>
+                            </div>
+                            <div class="col-md-9">
+                                <input type="date" name="CheckinDate" id="CheckinDate" required />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span>Check-out Date:</span>
+                            </div>
+                            <div class="col-md-9">
+                                <input type="date" name="CheckoutDate" id="CheckoutDate" required />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span>Number of People:</span>
+                            </div>
+                            <div class="col-md-9">
+                                <input type="number" name="NumofPeople" id="NumofPeople" required />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span>Room Type:</span>
+                            </div>
+                            <div class="col-md-9">
+                                <select name="RoomType" id="RoomType" required>
+                                    <option selected value="0">Please Select Room Type</option>
+                                    <option>King</option>
+                                    <option>Queen</option>
+                                    <option>Suit</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span>Phone:</span>
+                            </div>
+                            <div class="col-md-9">
+                                <input type="tel" pattern="\([0-9]{3}\) [0-9]{3}-[0-9]{4}" name="Phn" id="Phn" required />
+                                <span>Format:(###) ###-####</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span>E-mail Address:</span>
+                            </div>
+                            <div class="col-md-9">
+                                <input type="email" name="Email" id="Email" required />
+                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span>Payment Method:</span>
+                            </div>
+                            <div class="col-md-9">
+                                <select name="PaymentMethod" id="PaymentMethod" required>
+                                    <option selected value="0">Please Select Payment Method</option>
+                                    <option>MC</option>
+                                    <option>VISA</option>
+                                    <option>AMEX</option>
+                                    <option>Discover</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span>Card Number:</span>
+                            </div>
+                            <div class="col-md-9">
+                                <input type="text" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}" name="CardNumber" id="CardNumber" required />
+                                <span>Format:#### #### #### ####</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span><b>Special Request</b></span>
+                            </div>
+                            <div class="col-md-9">
+                                <textarea id="SpecialRequest" name="SpecialRequest"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div style="display:inline-block">
+                                <button type="submit">Submit</button>
+                                <button type="reset">Clear</button>
+                            </div>
+                        </div>
+
+                    </content>
+                </form>
+            </div>
+            <footer>
+                <span>
+                    <i>
+                        Copyright	&copy; 2022 Atlantic Trails Resort<br />
+                        <a href="mailto:syed.saba@montclair.edu">syed.saba@montclair.edu</a>
+                    </i>
+                </span>
+            </footer>
+        </section>
+    </div>
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/site.js"></script>
+</body>
+</html>

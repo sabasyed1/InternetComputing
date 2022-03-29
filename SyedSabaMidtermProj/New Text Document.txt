@@ -1,0 +1,21 @@
+change folder name to 
+
+
+first index.html 
+d- change email to 
+add red line  
+
+second
+add red line 
+
+third 
+f - phone number must use a legal format and should be in format (###) ###-####
+g- email must use legal format
+j- card number must only accept 16 digits
+add red line
+
+
+important Clicking on the menu item will bring you to the corresponding page even if you port these pages 
+to others’ computer. I.e., your web pages are portable and no absolute href refers to your 
+computer say desktop, your C drive and no images absolutely refers to a full path in your file 
+system.
